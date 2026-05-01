@@ -1,0 +1,37 @@
+@model IEnumerable<multimodelpass.Models.Student>
+
+<h1>Student Details</h1>
+
+<div class="container">
+
+    @{
+
+        <div class="row fw-bold">
+
+            <div class="col-lg-3 ">Roll</div>
+            <div class="col-lg-3">Name</div>
+            <div class="col-lg-3">Gender</div>
+            <div class="col-lg-3">Course</div>
+
+           
+
+        </div>
+
+        <hr />
+
+        foreach (var item in Model)
+        {
+            <div class="row">
+                <div class="col-lg-3">Roll No: @item.Roll</div>
+                <div class="col-lg-3" >Name: @item.Name</div>
+                <div class="col-lg-3" >Gender: @item.gender</div>
+                <div class="col-lg-3"> Course: @item.course</div>
+
+            </div>
+
+            
+
+        }
+    }
+
+</div>

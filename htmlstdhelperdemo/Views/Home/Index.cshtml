@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@using(Html.BeginForm("Validate","Home"))
+{
+   @Html.Label("Enter User id");
+    @Html.TextBox("Username");
+    <br/>
+    @Html.Label("Enter Password");
+    @Html.TextBox("password");
+    <br/>
+    <input type="submit" />
+
+}
