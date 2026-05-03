@@ -1,0 +1,14 @@
+@model stronglytypdedhelper.Models.Login
+
+@using(Html.BeginForm("Show","Student"))
+{
+    @Html.LabelFor(x=>x.username)
+    @Html.TextBoxFor(x=>x.username)
+    @Html.LabelFor(x=>x.password)
+   //@Html.PasswordFor(x=>x.password)
+    @Html.TextBoxFor(x=>x.password)
+
+    <hr/>
+    <input type="Submit" value="Login" />
+
+};

@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model templatedhtmlhelper.Models.Student
+<div class="text-center">
+    @using (Html.BeginForm("Index", "Home"))
+    {
+        @* @Html.DisplayName("Roll")
+        @Html.Editor("Roll")
+        @Html.DisplayName("Name")
+
+        @Html.Editor("Name")
+        @Html.DisplayName("Dob")
+
+        @Html.Editor("Dob")
+        @Html.DisplayName("isDiasable")
+
+        @Html.Editor("isDiasable") *@
+
+        @Html.DisplayNameFor(x=>x.Roll)
+        @Html.EditorFor(x=>x.Roll)
+        @Html.DisplayNameFor(x=>x.Name)
+
+        @Html.EditorFor(x=>x.Name)
+        @Html.DisplayNameFor(x=>x.Dob)
+
+        @Html.EditorFor(x=>x.Dob)
+        @Html.DisplayNameFor(x=>x.isDiasable)
+
+        @Html.EditorFor(x=>x.isDiasable)
+    }
+</div>
